@@ -1,3 +1,5 @@
+# Create a VPC with Public and Private Subnets Using Terraform
+
 This Terraform project shows how to specify and deploy the following components:
 + VPC
 + 1 internet gateway
