@@ -76,6 +76,7 @@ resource "aws_security_group" "tfvpc_sg" {
     project_name = var.project_name
   }
 }
+
 # Public route table, allows all outgoing traffic to go the the internet gateway.
 # https://www.terraform.io/docs/providers/aws/r/route_table.html?source=post_page-----1a7fb9a336e9----------------------
 resource "aws_route_table" "tfvpc_rtpub" {
@@ -89,6 +90,7 @@ resource "aws_route_table" "tfvpc_rtpub" {
     project_name = var.project_name
   }
 }
+
 # connect every public subnet with our public route table
 resource "aws_route_table_association" "tfvpc_rtpubassoc" {
   count = length(var.subpub_cidrs)
