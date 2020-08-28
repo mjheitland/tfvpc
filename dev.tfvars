@@ -1,0 +1,36 @@
+project_name="tfvpc"
+
+region="eu-central-1"
+
+vpc_cidr="10.0.0.0/16"
+
+subpub_cidr="10.0.0.0/24"
+
+subprv_cidr="10.0.1.0/24"
+
+subpub_cidrs = [
+  "10.0.0.0/24",
+  "10.0.2.0/24",
+]
+
+subprv_cidrs = [
+  #"10.0.1.0/24",
+  #"10.0.3.0/24",
+]
+
+access_ip     = "0.0.0.0/0"
+
+service_ports = [
+  { # ssh
+    from_port = 22,
+    to_port   = 22
+  },
+  { # http
+    from_port = 80,
+    to_port   = 80
+  },
+  { # https
+    from_port = 443, 
+    to_port   = 443
+  } 
+]
