@@ -13,9 +13,9 @@ This Terraform project shows how to specify and deploy the following components:
     
 * terraform init
 
-* terraform apply -auto-approve
+* terraform apply -var-file=dev.tfvars -auto-approve
     
-* terraform destroy -auto-approve
+* terraform destroy -var-file=dev.tfvars -auto-approve
 
 ## To delete Terraform state files
     rm -rfv **/.terraform # remove all recursive subdirectories

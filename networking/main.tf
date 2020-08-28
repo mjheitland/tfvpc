@@ -1,4 +1,3 @@
-#-- networking/main.tf ---
 data "aws_availability_zones" "available" {}
 
 resource "aws_vpc" "tfvpc_vpc" {

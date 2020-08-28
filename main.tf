@@ -1,8 +1,3 @@
-#--- root/main.tf ---
-provider "aws" {
-}
-
-# deploy networking resources
 module "networking" {
   source        = "./networking"
   

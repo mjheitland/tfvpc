@@ -1,6 +1,9 @@
-#--- root/variables.tf
 variable "project_name" {
   description = "project name is used as resource tag"
+  type        = string
+}
+variable "region" {
+  description = "AWS region"
   type        = string
 }
 variable "vpc_cidr" {
