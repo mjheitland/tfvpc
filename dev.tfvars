@@ -4,10 +4,6 @@ region="eu-central-1"
 
 vpc_cidr="10.0.0.0/16"
 
-subpub_cidr="10.0.0.0/24"
-
-subprv_cidr="10.0.1.0/24"
-
 subpub_cidrs = [
   "10.0.0.0/24",
   "10.0.2.0/24",
