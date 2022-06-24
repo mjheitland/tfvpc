@@ -1,8 +1,8 @@
-project_name="tfvpc"
+project_name = "tfvpc"
 
-region="eu-central-1"
+region = "eu-west-1"
 
-vpc_cidr="10.0.0.0/16"
+vpc_cidr = "10.0.0.0/16"
 
 subpub_cidrs = [
   "10.0.0.0/24",
@@ -10,11 +10,11 @@ subpub_cidrs = [
 ]
 
 subprv_cidrs = [
-  #"10.0.1.0/24",
-  #"10.0.3.0/24",
+  "10.0.1.0/24",
+  "10.0.3.0/24",
 ]
 
-access_ip     = "0.0.0.0/0"
+access_ip = "0.0.0.0/0"
 
 service_ports = [
   { # ssh
@@ -26,7 +26,7 @@ service_ports = [
     to_port   = 80
   },
   { # https
-    from_port = 443, 
+    from_port = 443,
     to_port   = 443
-  } 
+  }
 ]

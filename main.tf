@@ -1,6 +1,6 @@
 module "networking" {
-  source        = "./networking"
-  
+  source = "./networking"
+
   project_name  = var.project_name
   vpc_cidr      = var.vpc_cidr
   subpub_cidrs  = var.subpub_cidrs
